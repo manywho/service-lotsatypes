@@ -10,11 +10,18 @@ public class ApplicationConfiguration implements Configuration {
     @Configuration.Setting(name = "# of Types", contentType = ContentType.Number)
     private int numberOfTypes = 400;
 
+    @Configuration.Setting(name = "# of Bindings", contentType = ContentType.Number)
+    private int numberOfBindings = 1;
+
     public int getNumberOfProperties() {
         return numberOfProperties;
     }
 
     public int getNumberOfTypes() {
         return numberOfTypes;
+    }
+
+    public int getNumberOfBindings() {
+        return numberOfBindings;
     }
 }
